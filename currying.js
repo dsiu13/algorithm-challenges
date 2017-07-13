@@ -1,3 +1,7 @@
+// Write a  function that can take in one or two arguments and adds them together
+// add(6)(2) => 8
+// add(5, 3) => 8
+
 function add(x, y) {
   if (arguments.length < 2) {
     return function(y) {
@@ -8,8 +12,7 @@ function add(x, y) {
     return x + y;
 }
 
-console.log(add(5)(2))
-console.log(add(5, 3))
+
 
 const add = (...a) => {
      if (a.length < 2) {

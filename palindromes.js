@@ -1,3 +1,5 @@
+// Write a function that returns true if the passed in string is a palindrome and false if it isn’t. (should be case-insensitive)
+
 // With Reverse
 function palindrome(str){
   var re = /[\W_]/g;
@@ -18,7 +20,7 @@ function palindromeTwo(str) {
     return newString === regExStr;
 }
 
-//Better Without Reverse
+//Better Without Reverse?
 function palindrome(str) {
  var re = /[^A-Za-z0-9]/g;
  str = str.toLowerCase().replace(re, '');

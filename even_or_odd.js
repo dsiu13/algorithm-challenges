@@ -1,3 +1,5 @@
+// Determine if a number is Even or Odd without % or Division
+
 function evenOdd(num){
     for(var i  = Math.abs(num); i >= 0; i -= 2){
       if(i === 0){
