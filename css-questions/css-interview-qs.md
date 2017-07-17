@@ -27,10 +27,6 @@
    <div class="box"><span>5</span></div>
  </div>
  ````
-1 2 3
-4 5
-
-
 
 # 2. How can you clear sides of a floating element?
 - If you clear the side of an element, floating elements will not be accepted on that side.
@@ -53,32 +49,28 @@
 
  - Clear on 2nd box, no elements would be placed left of it.
 
- 1
- 2 3 4
- 5
-
 # 3. Misc CSS Questions
 
 1. Are CSS properties case sensitive?
-i. No.
+* No.
 
 2. Are CSS selectors case sensitive?
-i. Yes, IDs and Classes are case sensitive.
+* Yes, IDs and Classes are case sensitive.
 
 3. Does Margin-Top/Margin-Bottom or Padding-Top/Padding-Bottom have an effect on an Inline Element?
-i. No.
+* No.
 
 4. Does Margin-Left/Margin-Right or Padding-Left/Padding-Right have an effect on an Inline Element?
-i. Yes
+* Yes
 
 5. if you have a <p> tag with font-size 10rem, will the text be responsive if a user resizes the browser window?
-i. No. rem is only relative to the html(root) font size. em is relative to the font-size of its direct or nearest parent.
+* No. rem is only relative to the html(root) font size. em is relative to the font-size of its direct or nearest parent.
 
 6. The Pseudo Class :checked will select inputs with type radio or checkbox, but not <options> elements.
-i. False
+* False
 
 7. In an Html Doc, the psudeo class :root always refers to the <html> element.
-i. True
+* True
 
 8. The translate() function can move the position of an element on the z-axis.
-i. False
+* False
