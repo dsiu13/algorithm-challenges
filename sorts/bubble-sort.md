@@ -1,7 +1,7 @@
 # Bubble Sort
-- 1. Compare the 1st position with the 2nd position. If the 1st item is larger swap, so that the bigger # is in the 2nd position
-- 2. Then Compare 2nd position with the 3rd position. Swap if the 2nd position # is larger
-- 3. This is repeated until the numbers are sorted in ascending order.
+- Compare the 1st position with the 2nd position. If the 1st item is larger swap, so that the bigger # is in the 2nd position
+- Then Compare 2nd position with the 3rd position. Swap if the 2nd position # is larger
+- This is repeated until the numbers are sorted in ascending order.
 
 ````
 function bubbleSort(arr){
