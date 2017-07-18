@@ -1,5 +1,7 @@
 # Insertion Sort
 
+Takes an element compares it to the current element, and inserts the element left or right depending on if the value is greater or less than the current element.
+
 ````
 function insertionSort(arr){
   var i, len = arr.length, el, j;

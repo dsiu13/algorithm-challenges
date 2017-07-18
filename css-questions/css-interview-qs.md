@@ -74,3 +74,6 @@
 
 8. The translate() function can move the position of an element on the z-axis.
 * False
+
+# 4 PX, em, %, or pt?
+* px - gives fine grained control and maintains alignment because 1px or a multiple of 1px is guaranteed. Px is not cascade
