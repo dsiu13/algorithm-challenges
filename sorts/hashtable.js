@@ -1,5 +1,7 @@
 // 1. Create two Constructors. One for Nodes, the other for the Hash table
 // 2. Create a Hash Function
+// 3. Write functions to put, get, check, iterate,
+// or chains through the create linked list
 
 // Node constructor takes in two args. Key/Data Value Pairs
 class Node{
