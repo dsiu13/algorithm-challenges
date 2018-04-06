@@ -12,8 +12,6 @@ function add(x, y) {
     return x + y;
 }
 
-
-
 const add = (...a) => {
      if (a.length < 2) {
         return function (y) {
