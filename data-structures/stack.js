@@ -2,6 +2,9 @@
 // A simple array object already has the two basic methods needed to create a LIFO stack push and pop.
 // The push method will add any object to the top of the stack and the pop method will remove it.
 // To treat an array as a LIFO stack you simply create an instance and use push and pop.
+// Stack functions: push, pop. peek, length.
+
+// You can use these methods on arrays
 
 //Example stack
 var stack = new Array();
@@ -38,13 +41,12 @@ alert(stack.pop());
 alert(stack.pop());
 alert(stack.pop());
 
-// If you make the stac Array object private using a closure say
+// If you make the stack Array object private using a closure say
 // then the only operations allowed on Stack are Push and Pop.
 
 //Notice that while we refer to the "top of the stack"
 // Push adds the object to the "end" of the array and
 // Pop removes the final element.
-
 
 var stack=new Stack();
 stack.push("A"); // Index 0
