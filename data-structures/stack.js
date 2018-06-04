@@ -6,6 +6,12 @@
 
 // You can use these methods on arrays
 
+// Time Complexity
+// Space  Avg: O(n) Worst: O(n)
+// Search Avg: O(n) Worst: O(n)
+// Insert Avg: O(1) Worst: O(1)
+// Delete Avg: O(1) Worst: O(1)
+
 //Example stack
 var stack = new Array();
 stack.push("A");

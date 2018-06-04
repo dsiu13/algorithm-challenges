@@ -1,6 +1,12 @@
 // FIFO(First In First Out) Queue
 // You can use an Array as a Queue
 
+// Time Complexity
+// Space  Avg: O(n) Worst: O(n)
+// Search Avg: O(n) Worst: O(n)
+// Insert Avg: O(n) Worst: O(1)
+// Delete Avg: O(n) Worst: O(1)
+
 /* Queues */
 
 function Queue () {
