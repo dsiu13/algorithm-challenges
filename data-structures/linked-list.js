@@ -16,7 +16,6 @@
 // Linked list no waste of memory
 // Sequential access is slow on linked list due to elements no in contiguous memory locations
 
-
 /* LinkedList */
 
 function LinkedList() {
@@ -147,4 +146,4 @@ function LinkedList() {
     return currentNode.element;
   }
 
-}; 
+};
