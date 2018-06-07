@@ -1,6 +1,6 @@
 //FOR Loop
 function findLongestWordLength(str) {
-  splitArr = str.split(" ")
+  var splitArr = str.split(" ")
   var longestWord = 0
   for(i=0; i < splitArr.length; i++){
     if(splitArr[i].length > longestWord){
