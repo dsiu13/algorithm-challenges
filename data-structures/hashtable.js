@@ -3,6 +3,12 @@
 // 3. Write functions to put, get, check, iterate,
 // or chains through the create linked list
 
+// Time Complexity
+// Space Avg:  0(n) Worse: 0(n)
+// Search Avg: 0(1) Worse: 0(n)
+// Insert Avg: 0(1) Worse: 0(n)
+// Delete Avg: 0(1) Worse: 0(n)
+
 // Node constructor takes in two args. Key/Data Value Pairs
 class Node{
   constructor(key, data) {
