@@ -6,7 +6,7 @@
 // Going to be super slow on large data sets.
 // Also fails if num in 1st array position doesn't sum to K with any other num in the array.
 
-// 1st Attempt
+// 1st Attempt on 6-21-18
 var Array = [10, 15, 3, 7];
 var K = 17;
 var ansArray = [];
@@ -21,3 +21,5 @@ function sumCheck(Array, K) {
 }
 
 sumCheck(Array, K)
+
+// 2nd Attempt 6-22-18
