@@ -1,7 +1,7 @@
 There are 25 horses among which you need to find out the fastest 3 horses. You can conduct race among at most 5 to find out their relative speed. At no point you can find out the actual speed of the horse in a race. Find out how many races are required to get the top 3 horses.
 
 
-
+## 1 is the fastest, 5 the slowest.
 - 1 (A5 A4 A3 A2 A1)
 - 2 (B5 B4 B3 B2 B1)
 - 3 (C5 C4 C3 C2 C1)
