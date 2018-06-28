@@ -10,7 +10,7 @@
 function linearSearch(arr, target) {
   for (var i=0; i<array.length; i++) {  // loop to access each ele in array
     if(array[i] === target) { // check index value vs target value
-      return array[i] // return our value
+      return i // return our value
     }
   }
   return -1
