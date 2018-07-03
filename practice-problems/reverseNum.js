@@ -8,7 +8,6 @@
 //   reverseInt(-15) === -51
 //   reverseInt(-90) === -9
 
-
 // Native JS methods
 function reverseInt(num){
   var int = num.toString()
