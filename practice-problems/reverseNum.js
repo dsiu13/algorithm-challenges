@@ -10,8 +10,32 @@
 
 // Native JS methods
 function reverseInt(num){
-  var int = num.toString()
-  var reversedNum = Number(int.split('').reverse().join(''));
-  return reversedNum
+const reversed = num
+  .toString()
+  .split('')
+  .reverse()
+  .join('')
+
+  if (n < 0) {
+    return parseInt(reversed) * -1;
+  }
+
+  return parseInt(reversed)
 }
-reverseInt(123)
+
+reverseInt(123);
+
+////////////////////////
+
+
+function reverseInt(num){
+const reversed = num
+  .toString()
+  .split('')
+  .reverse()
+  .join('')
+
+  return parseInt(reversed) * Math.sign(n);
+}
+
+reverseInt(123);
