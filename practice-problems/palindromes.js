@@ -1,4 +1,18 @@
-// Write a function that returns true if the passed in string is a palindrome and false if it isn’t. (should be case-insensitive)
+// Write a function that returns true if the passed in string is
+// a palindrome and false if it isn’t. (should be case-insensitive)
+
+// No Regex
+function palindrome(str){
+  const reversed = str.split('').reverse().join('');
+  return str === reversed;
+}
+
+// No Regex - every()
+function palindrome(str){
+  return str.split('').every((char, i) => {
+    return char === str[str.length - i - 1];
+  });
+}
 
 // With Reverse
 function palindrome(str){
@@ -25,11 +39,12 @@ function palindrome(str) {
  var re = /[^A-Za-z0-9]/g;
  str = str.toLowerCase().replace(re, '');
  var len = str.length;
+
  for (var i = 0; i < len/2; i++) {
    if (str[i] !== str[len - 1 - i]) {
        return false;
-   }
- }
+   };
+ };
  return true;
 }
 
