@@ -7,10 +7,11 @@
 //   anagrams('RAIL! SAFETY!', 'fairy tales') --> True
 //   anagrams('Hi there', 'Bye there') --> False
 
+// 1st solution
 function anagrams(stringA, stringB) {
   const re = /[^\W]/g;
-  let a = stringA.replace(re,'').toLowerCase().split('').sort().join('');
-  let b = stringB.replace(re,'').toLowerCase().split('').sort().join('');
+  let a = stringA.replace(re, '').toLowerCase().split('').sort().join('');
+  let b = stringB.replace(re, '').toLowerCase().split('').sort().join('');
 
    if(a === b ){
 
@@ -21,9 +22,15 @@ function anagrams(stringA, stringB) {
 
 }
 
-anagrams('rail safety', 'fairy tales');
-anagrams('RAIL! SAFETY!', 'fairy tales');
-anagrams('Hi there', 'Bye there');
+// 1st solution using Helper function
+function anagrams(stringA, stringB) {
+  return cleanString(stringA) === cleanString(stringB;
+}
+
+function cleanString(str){
+  const re = /[^\W]/g;
+  return str.replace(re, '').toLowerCase().split('').sort().join('')
+}
 
 // 2nd solution
 function anagrams(stringA, stringB) {
@@ -55,10 +62,5 @@ function buildCharMap(str){
   }
 
   return charMap;
-
-}
-
-// 3rd solution
-function anagrams(stringA, stringB) {
 
 }
