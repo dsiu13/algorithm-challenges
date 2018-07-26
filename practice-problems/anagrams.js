@@ -14,10 +14,9 @@ function anagrams(stringA, stringB) {
   let b = stringB.replace(re, '').toLowerCase().split('').sort().join('');
 
    if(a === b ){
-
-     console.log('True')
+     return true;
    } else {
-     console.log('False')
+     return false;
    }
 
 }
