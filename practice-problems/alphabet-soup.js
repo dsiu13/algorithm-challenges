@@ -1,4 +1,5 @@
-// Create a function that takes a string and returns a string with its letters in alphabetical order.
+// Create a function that takes a string and returns
+// a string with its letters in alphabetical order.
 // Examples
 // "hello" ➞ "ehllo"
 // "edabit" ➞ "abdeit"
@@ -11,9 +12,9 @@
 // uppercase letters are considered less than lowercase in JS
 
 function alphabetSoup(str){
-
-var splitStr = str.split('');
-console.log(splitStr.sort());
-}
+  var splitStr = str.toLowerCase().split('').sort();
+  console.log(splitStr);
+  return splitStr;
+  }
 
 alphabetSoup("hello");
