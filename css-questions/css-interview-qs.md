@@ -69,7 +69,7 @@
 6. The Pseudo Class :checked will select inputs with type radio or checkbox, but not <options> elements.
 * False
 
-7. In an Html Doc, the psudeo class :root always refers to the <html> element.
+7. In an Html Doc, the pseudo class :root always refers to the <html> element.
 * True
 
 8. The translate() function can move the position of an element on the z-axis.
