@@ -20,3 +20,41 @@ function fib(n) {
   }
   return result[n];
 }
+
+// Recursive - 2^n
+// exponential runtime, significant increase in function calls
+function fib(n) {
+  if(n < 2){
+    return n;
+  }
+  return fib(n - 1) + fib(n - 2);
+}
+
+// refactored recursive (Memoization)
+// the fib function is being called multiple times with the same arguments
+// Memoization -> store the args of each function call along with the result
+// if the function is called again with the same arguments, return the precomputed result
+// instead of running the function again
+// slow fib function -> Memorizer -> fast memoized fib function
+
+function memoizer(fn) {
+  // faster function than original
+  const cache = {};
+  return function(...args) {
+    if (cache[args]) {
+      return cache[args];
+    }
+
+    const result = fn.apply(this, args);
+    cache[args] = results;
+
+    return result;
+  }
+}
+
+function slowFib(n) {
+  if(n < 2){
+    return n;
+  }
+  return fib(n - 1) + fib(n - 2);
+}
