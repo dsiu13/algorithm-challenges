@@ -2,11 +2,15 @@ There are 25 horses among which you need to find out the fastest 3 horses. You c
 
 
 ## 1 is the fastest, 5 the slowest.
-- 1 (A5 A4 A3 A2 A1)
-- 2 (B5 B4 B3 B2 B1)
-- 3 (C5 C4 C3 C2 C1)
-- 4 (D5 D4 D3 D2 D1)
-- 5 (E5 E4 E3 E2 E1)
+
+| Group  | Second Header |
+| :---: | :-------------: |
+| 1  | (A5 A4 A3 A2 A1)  |
+| 2  | (B5 B4 B3 B2 B1)  |
+| 3  | (C5 C4 C3 C2 C1)  |
+| 4  | (D5 D4 D3 D2 D1)  |
+| 5  | (E5 E4 E3 E2 E1)  |
+
 
 ### Seven Races
 

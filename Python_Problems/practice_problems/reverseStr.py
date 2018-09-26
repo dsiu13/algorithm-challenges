@@ -5,7 +5,6 @@
 # Your result must be a string.
 
 def reverseString(str):
-    print(str[::-1])
     return str[::-1]
 
 reverseString('hello world')
