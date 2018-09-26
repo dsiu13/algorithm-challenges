@@ -8,13 +8,16 @@
 - What is the least amount of time in which all the travelers can cross from one side of the bridge to the other?
 
 a = 1 min
-b = 2 min 
+b = 2 min
 c = 5 min
 d = 10 min
 
 ### Includes return time to other side
-2a + b = 3 -> a returns
-c + d + b = 12 -> b returns
-a + b = 2
 
-- 17 minutes total
+| Crossing # | Travelers | Person returning | Round trip time |
+| :------: | :-----: | :-----: | :-----: |
+| Crossing 1 | A + B | A | 3 Mins |
+| Crossing 2 | C + D | B | 12 Mins |
+| Crossing 3 | A + B | No One | 2 Mins |
+
+### 17 minutes total
