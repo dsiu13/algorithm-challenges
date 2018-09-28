@@ -9,6 +9,7 @@
 // whenever "a" is less than "b", a negative value is returned,
 // which results in the smaller elements always appearing to the left of the larger ones, in other words, ascending.
 
+
 var findMin = function(nums) {
   nums.sort(function(a,b){return a - b})
   return nums[0]

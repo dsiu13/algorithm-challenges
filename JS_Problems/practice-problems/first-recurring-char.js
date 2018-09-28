@@ -9,8 +9,6 @@
 // Set() string?
 // Compare the two sets?
 
-
-
 // Split str, sort, iterate through looking for two that match next to each other.
 function firstRecurring(str){
 
