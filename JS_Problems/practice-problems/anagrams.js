@@ -9,10 +9,23 @@
 
 // 1st solution
 function anagrams(stringA, stringB) {
+  // regex to clean our input
   const re = /[^\W]/g;
-  let a = stringA.replace(re, '').toLowerCase().split('').sort().join('');
-  let b = stringB.replace(re, '').toLowerCase().split('').sort().join('');
 
+  // alphabetical sort
+  let a = stringA.replace(re, '')
+                 .toLowerCase()
+                 .split('')
+                 .sort()
+                 .join('');
+
+  let b = stringB.replace(re, '')
+                 .toLowerCase()
+                 .split('')
+                 .sort()
+                 .join('');
+
+// checked the sorted string against each other
    if(a === b ){
      return true;
    } else {
@@ -28,7 +41,10 @@ function anagrams(stringA, stringB) {
 
 function cleanString(str){
   const re = /[^\W]/g;
-  return str.replace(re, '').toLowerCase().split('').sort().join('')
+  return str.replace(re, '').toLowerCase()
+                            .split('')
+                            .sort()
+                            .join('')
 }
 
 // 2nd solution
@@ -51,7 +67,6 @@ function anagrams(stringA, stringB) {
 }
 
 //Helper function
-
 function buildCharMap(str){
   const charMap = {};
   const re = /[^\W]/g;

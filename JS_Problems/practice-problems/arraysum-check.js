@@ -11,12 +11,16 @@ Array.prototype.sum = function () {
 
 ////////////////////////////////////////
 
-var count = 0;
+arraySum2 = (arr) => {
+  // storage var
+  let count = 0;
 
-for (var i = 0; i < array.length; i++){
-  count += array[i];
+  // for loop, grav each int, and add it to our storage var
+  for (var i = 0; i < arr.length; i++){
+    count += arr[i];
+  }
 }
 
 ////////////////////////////////////////
 
-sum = array.reduce((pv, cv) => pv+cv, 0);
+sum = array.reduce((pv, cv) => pv + cv, 0);

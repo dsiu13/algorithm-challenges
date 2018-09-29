@@ -1,20 +1,30 @@
 // Write a function that returns true if the passed in string is
 // a palindrome and false if it isn’t. (should be case-insensitive)
 
-// No Regex
-function palindrome(str){
-  const reversed = str.split('').reverse().join('');
-  return str === reversed;
-}
 
-// No Regex - every()
+function palindrome(str){
+  const strconv = str.replace(/[\W]/gi,’’).toLowerCase();
+  const strrev  = [...strconv].reduce((prev,next)=>next+prev);
+ return strconv === strrev;
+}
+console.log(palindrome("A man, a plan, a canal ,,,Panama"))
+
+///////////////////////////////////
+
+function palindrome2(str){
+  const str1 = [...str].reverse().join('');
+  return str === str1;
+}
+console.log(palindrome('tennet')) //tennet
+
+///////////////////// No Regex - every()
 function palindrome(str){
   return str.split('').every((char, i) => {
     return char === str[str.length - i - 1];
   });
 }
 
-// With Reverse
+/////////////////////// With Reverse
 function palindrome(str){
   var re = /[\W_]/g;
   var lowCaseStr = str.toLowerCase().replace(re, '');
@@ -34,7 +44,7 @@ function palindromeTwo(str) {
     return newString === regExStr;
 }
 
-//Better Without Reverse?
+/////////////////////// Better Without Reverse?
 function palindrome(str) {
  var re = /[^A-Za-z0-9]/g;
  str = str.toLowerCase().replace(re, '');
@@ -50,6 +60,6 @@ function palindrome(str) {
 
 console.log(palindrome("never odd or even")); // True
 console.log(palindrome("N O P E")) // False
-console.log(palindrome("_(: /-\ :)–")) // True
+console.log(palindrome("-(: /-\ :)–")) // True
 console.log(palindrome("not a palindrome")) // False
 console.log(palindrome("A Man, a Plan, a Canal. Panama")) // True

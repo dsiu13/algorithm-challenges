@@ -8,13 +8,23 @@
 // "javascript" ➞ "aacijprstv"
 
 // Call a split on str into substring
-// sort()
+// sort() - dictionary order
 // uppercase letters are considered less than lowercase in JS
+// need to call lower case
 
 function alphabetSoup(str){
-  var splitStr = str.toLowerCase().split('').sort();
-  console.log(splitStr);
-  return splitStr;
-  }
+  return splitStr = str.toLowerCase()
+                       .split('')
+                       .sort()
+                       .join('');
+}
 
-alphabetSoup("hello");
+alphabetSoup("hello"); // 'ehllo'
+
+// ES6 lol
+alphabetSoup = (str) => {
+return splitStr = str.toLowerCase()
+                       .split('')
+                       .sort()
+                       .join('');
+}
