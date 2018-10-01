@@ -16,16 +16,13 @@
 // reudce given array
 // then divide by missing num/i
 
-const givenArray = [1, 2, 3, 4, 5];
-
-// Sum array via helper function
+// reduce array via helper function
 const reducer = (accumulator, currentValue) => accumulator * currentValue;
 const productArray = [];
 
-var product = givenArray.reduce(reducer);
-
 // iterate dividing sum by i
 function arrayProduct(array) {
+  var product = array.reduce(reducer);
   // if we sub 1 from arr length we need to use <= instead of <
   let length = array.length - 1
   for(i = 0; i <= length; i++){
@@ -34,20 +31,23 @@ function arrayProduct(array) {
   return productArray;
 }
 
-arrayProduct(givenArray)
+//////// Cleaner with Map ////////////////////////////////////////////////////////////////////
 
-// what if you can't use division?
+// reduce array via helper function
+const reducer = (accumulator, currentValue) => accumulator * currentValue;
+
+function arrayProduct(array) {
+    var product = array.reduce(reducer)
+    return array.map(x => product/x)
+}
+
+///// what if you can't use division? ////////////////////////////////////////////////////////////
 
 // Helper functions
-// Sum
 const reducer = (accumulator, currentValue) => accumulator * currentValue;
 
 //store
 const productArray = [];
-
-const reducer = (accumulator, currentValue) => accumulator * currentValue;
-const productArray = [];
-
 
 function arrayProduct2(arr) {
   // if we sub 1 from arr length we need to use <= instead of <
@@ -55,10 +55,35 @@ function arrayProduct2(arr) {
 
   for(i=0; i <= length; i++){
     var filteredAry = arr.filter(function(e) { return e !== arr[i] })
-    var sum = filteredAry.reduce(reducer);
-    productArray.push(sum)
-  }
+    var total = filteredAry.reduce(reducer);
+    productArray.push(total)
+  };
   return productArray;
 }
 
 arrayProduct2(givenArray)
+
+//////// Cleaner with Map - no division ////////////////////////////////////////////////////////////////////
+
+// Helper functions
+const reducer = (accumulator, currentValue) => accumulator * currentValue;
+
+//store
+const productArray = [];
+
+function arrayProduct2(arr){
+  arr.map(x => {
+    var filteredAry = arr.filter(function(e) { return e !== x })
+    var total = filteredAry.reduce(reducer);
+    productArray.push(total)
+  })
+
+  return productArray;
+};
+
+//
+// arr.map(function(x){
+//   var filteredAry = arr.filter(function(e) { return e !== x })
+//   var total = filteredAry.reduce(reducer);
+//   productArray.push(total)
+// })
