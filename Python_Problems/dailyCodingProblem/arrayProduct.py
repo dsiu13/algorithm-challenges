@@ -27,6 +27,6 @@ def arrayProduct(arr):
         arrayList.append(int(sum/i))
     return arrayList
 
-print(arrayProduct(givenArray))
+# Without division ################################################
 
-# Without division
+def arrayProduct2(arr):

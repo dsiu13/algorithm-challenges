@@ -81,7 +81,7 @@ function arrayProduct2(arr){
   return productArray;
 };
 
-//
+// map with standard function use.
 // arr.map(function(x){
 //   var filteredAry = arr.filter(function(e) { return e !== x })
 //   var total = filteredAry.reduce(reducer);
