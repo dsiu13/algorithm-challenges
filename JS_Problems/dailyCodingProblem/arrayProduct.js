@@ -6,25 +6,59 @@
 //
 // Follow-up: what if you can't use division?
 
+// Sum then divide by integer[i]
 // [2, 3, 4, 5] => 120
-// [2, 4, 5] => 40
-// [3, 4, 5] =>  60
-// [2, 3, 4] =>  24
+// 2 - [3, 4, 5] =>  60
+// 3 - [2, 4, 5] => 40
+// 4 - [2, 3, 5] => 30
+// 5 - [2, 3, 4] =>  24
 
 // reudce given array
 // then divide by missing num/i
 
 const givenArray = [1, 2, 3, 4, 5];
+
+// Sum array via helper function
 const reducer = (accumulator, currentValue) => accumulator * currentValue;
 const productArray = [];
 
 var product = givenArray.reduce(reducer);
 
+// iterate dividing sum by i
 function arrayProduct(array) {
-  for(i = 0; i < array.length; i++){
+  // if we sub 1 from arr length we need to use <= instead of <
+  let length = array.length - 1
+  for(i = 0; i <= length; i++){
     productArray.push(product/array[i]);
-    return productArray
   }
+  return productArray;
 }
 
 arrayProduct(givenArray)
+
+// what if you can't use division?
+
+// Helper functions
+// Sum
+const reducer = (accumulator, currentValue) => accumulator * currentValue;
+
+//store
+const productArray = [];
+
+const reducer = (accumulator, currentValue) => accumulator * currentValue;
+const productArray = [];
+
+
+function arrayProduct2(arr) {
+  // if we sub 1 from arr length we need to use <= instead of <
+  let length = arr.length - 1
+
+  for(i=0; i <= length; i++){
+    var filteredAry = arr.filter(function(e) { return e !== arr[i] })
+    var sum = filteredAry.reduce(reducer);
+    productArray.push(sum)
+  }
+  return productArray;
+}
+
+arrayProduct2(givenArray)
