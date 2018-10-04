@@ -21,3 +21,16 @@ function maxSubArray(nums){
 }
 
 console.log(maxSubArray([-2,1]))
+
+// actual solution ///////////////////////////////////////////////////
+
+let maxSubArray = (nums) => {
+   let answer = nums[0],
+       sum = nums[0];
+
+    for (let i = 1; i < nums.length; i++) {
+        sum = Math.max(nums[i], sum + nums[i]);
+        answer = Math.max(answer, sum);
+    }
+    return answer;
+};
