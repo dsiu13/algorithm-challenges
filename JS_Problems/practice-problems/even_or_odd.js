@@ -35,6 +35,8 @@ oddEven(7)
 ///////////////////////////////////////////////////
 
 // Bitwise Operators
+// last bit(LSB) is 0 for all even numbers and 1 for all odd numbers.
+// Example : 2 - 0000 0010, 8 - 0000 1000 and 5 - 0000 0101
 
 function oddOrEven(x) {
     return ( x & 1 ) ? "odd" : "even";
