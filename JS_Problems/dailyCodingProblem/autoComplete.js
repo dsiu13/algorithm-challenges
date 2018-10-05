@@ -5,6 +5,16 @@
 //[dog, deer, deal], return [deer, deal].
 // Hint: Try preprocessing the dictionary into a more efficient data structure to speed up queries.
 
- function autocomplete(arr, query){
-   
- }
+function autocomplete(arr, query){
+  let qLength = query.length
+  let ans = [];
+  arr.map(x => {
+    if(x.slice(0, qLength) === query){
+      ans.push(x)
+    }
+  })
+   return ans
+}
+
+
+autocomplete([dog, deer, deal], 'de')

@@ -11,7 +11,9 @@ def even_or_odd(num):
         if num == 0:
             print('Even')
 
-even_or_odd(-11234)
+# Bitwise operator ////////////////////////////////
+# last bit(LSB) is 0 for all even numbers and 1 for all odd numbers.
+# Example : 2 - 0000 0010, 8 - 0000 1000 and 5 - 0000 0101
 
 def odd_or_even(num):
     if((num&1)==0):
@@ -19,4 +21,5 @@ def odd_or_even(num):
     else:
         print("{} is Odd".format(num))
 
-odd_or_even(11)
+
+#
