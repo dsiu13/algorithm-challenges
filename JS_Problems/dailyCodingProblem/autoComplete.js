@@ -5,6 +5,7 @@
 //[dog, deer, deal], return [deer, deal].
 // Hint: Try preprocessing the dictionary into a more efficient data structure to speed up queries.
 
+
 function autocomplete(arr, query){
   let qLength = query.length
   let ans = [];
@@ -16,5 +17,7 @@ function autocomplete(arr, query){
    return ans
 }
 
-
 autocomplete([dog, deer, deal], 'de')
+
+
+// Use BST to match query via transverse, so we don't waste effort on things that don't match?
