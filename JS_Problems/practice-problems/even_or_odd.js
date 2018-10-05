@@ -31,3 +31,11 @@ function oddEven(num) {
 };
 
 oddEven(7)
+
+///////////////////////////////////////////////////
+
+// Bitwise Operators
+
+function oddOrEven(x) {
+    return ( x & 1 ) ? "odd" : "even";
+}
