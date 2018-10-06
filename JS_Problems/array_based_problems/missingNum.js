@@ -13,3 +13,12 @@ function missingNum(array) {
 }
 
 // Multiple missing integers in a range
+function missingNums(arr) {
+    var missingNums = [];
+    for(var i=Math.min(...arr); i<Math.max(...arr); i++){
+     if(arr.indexOf(i) === -1){
+       missingNum.push(i);
+     }
+  }
+  return missingNums
+}
