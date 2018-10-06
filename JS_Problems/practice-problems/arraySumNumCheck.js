@@ -4,6 +4,7 @@
 
 
 // Doesn't account for duplicate number pairs
+
 let ans = []
 
 arraySumChecker = (arr, num) => {
@@ -16,4 +17,22 @@ arraySumChecker = (arr, num) => {
   return ans
 }
 
-// Solutoin for removing duplicate number pairs
+// Solution that removes duplicate number pairs. [4,3] & [3,4]
+// remove dupes.
+let ans = []
+let pairs = []
+
+arraySumChecker = (arr, num) => {
+  arr.map(x => {
+    let res = num - x
+    if (res + x === num){
+      ans.push(res, x)
+    }
+  });
+
+  let ans1 = [... new Set(ans)]
+  for(i=0; i < ans1.length - 1; i += 2){
+    pairs.push([ans1[i], ans1[i+1]])
+  }
+  return pairs
+}
