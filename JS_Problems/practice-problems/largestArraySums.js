@@ -14,16 +14,18 @@
 // You can modify the input array in-place and you do not need to store the results. You can simply print them out as you compute them.
 
 largestArraySum = (arr, k) => {
-  store = []
-  ans = []
+  store = [];
+  ans = [];
 
-  for(i=0; i < arr.length - 1; i++){
-    store.push(arr.slice(0+i, i+k))
-  }
-  for(i=0; i < store.length - 1; i++){
-    if(store[i].length-1 >= k-1){
-      ans.push(Math.max.apply(Math, store[i]))
-    }
-  }
-  return ans
-}
+  for (i = 0; i < arr.length - 1; i++) {
+    store.push(arr.slice(0+i, i+k));
+  };
+
+  for (i = 0; i < store.length - 1; i++) {
+    if (store[i].length - 1 >= k - 1) {
+      ans.push(Math.max.apply(Math, store[i]));
+    };
+  };
+
+  return ans;
+};
