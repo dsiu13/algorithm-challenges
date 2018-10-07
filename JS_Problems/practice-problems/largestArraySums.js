@@ -11,16 +11,22 @@
 // k = array size
 //
 // Do this in O(n) time and O(k) space.
-// You can modify the input array in-place and you do not need to store the results. You can simply print them out as you compute them.
+// You can modify the input array in-place and you do not need to store the results.
+// You can simply print them out as you compute them.
 
 largestArraySum = (arr, k) => {
   store = [];
   ans = [];
 
+// loop through given arr and slice based on given k size
+// push to a store arr
   for (i = 0; i < arr.length - 1; i++) {
-    store.push(arr.slice(0+i, i+k));
+    store.push(arr.slice(0 + i, i + k));
   };
 
+// loop through the store
+// grab any sub-array whose length matches k
+// then we get the largest number in the sub-array and push it to our ans array
   for (i = 0; i < store.length - 1; i++) {
     if (store[i].length - 1 >= k - 1) {
       ans.push(Math.max.apply(Math, store[i]));
