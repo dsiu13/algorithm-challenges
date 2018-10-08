@@ -12,20 +12,9 @@ let ans = []
 // 'destructuring assignment' syntax is a JavaScript expression that makes it possible to unpack
 // values from arrays, or properties from objects, into distinct variables.
 
-maxNumbers = (arr, k) => {
-  store = [];
-  ans = [];
-  var j = k;
-  for(i=0; i < arr.length - 1; i++) {
-    store.push(subArr = arr.slice(i, j));
-    j++;
-  };
-
-  store.map( x => {
-    if(x.length === k){
-      ans.push(Math.max.apply(Math, x))
-      console.log(ans)
-    }
-  });
- return ans
+minMaxNumber = arr => {
+  let min = Math.min.apply(Math, arr)
+  let max = Math.max.apply(Math, arr)
+  ans.push(min, max)
+  return ans
 }

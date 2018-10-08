@@ -14,7 +14,18 @@
 // You can simply print them out as you compute them.
 
 maxNumbers = (arr, k) => {
-  for(i=0; i < arr.length - 1; i++){
-    arr.slice(i, k)
-  }
+  store = [];
+  ans = [];
+  var j = k;
+  for(i=0; i < arr.length - 1; i++) {
+    store.push(subArr = arr.slice(i, j));
+    j++;
+  };
+
+  store.map( x => {
+    if(x.length === k){
+      ans.push(Math.max.apply(Math, x))
+    }
+  });
+ return ans
 }
