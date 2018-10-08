@@ -15,14 +15,17 @@ let ans = []
 maxNumbers = (arr, k) => {
   store = [];
   ans = [];
-  for(i=0; i < arr.length - 1; i++){
-    store.push(subArr = arr.slice(i, k));
-    k++;
-  }
-  store.map((x, k) => {
-    if(x.length >= k){
+  var j = k;
+  for(i=0; i < arr.length - 1; i++) {
+    store.push(subArr = arr.slice(i, j));
+    j++;
+  };
+
+  store.map( x => {
+    if(x.length === k){
       ans.push(Math.max.apply(Math, x))
+      console.log(ans)
     }
-  })
+  });
  return ans
 }
