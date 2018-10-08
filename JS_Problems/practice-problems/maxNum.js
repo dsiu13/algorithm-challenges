@@ -12,3 +12,9 @@
 // Do this in O(n) time and O(k) space.
 // You can modify the input array in-place and you do not need to store the results.
 // You can simply print them out as you compute them.
+
+maxNumbers = (arr, k) => {
+  for(i=0; i < arr.length - 1; i++){
+    arr.slice(i, k)
+  }
+}
