@@ -1,12 +1,12 @@
-# Given an array of integers, return a new array such that each element at index i of the new array
-# is the product of all the numbers in the original array except the one at i.
+# Given an listay of integers, return a new listay such that each element at index i of the new listay
+# is the product of all the numbers in the original listay except the one at i.
 
 # For example, if our input was [1, 2, 3, 4, 5], the expected output would be [120, 60, 40, 30, 24].
 # If our input was [3, 2, 1], the expected output would be [2, 3, 6].
 
 # Follow-up: what if you can't use division?
 
-# Sum then divide by integer[i]
+# multiply then divide by integer[i]
 # [2, 3, 4, 5] => 120
 # 2 - [3, 4, 5] =>  60
 # 3 - [2, 4, 5] => 40
@@ -15,18 +15,28 @@
 
 from functools import reduce
 
-givenArray = [3,4,5]
-
-def arrayProduct(arr):
+def listProduct(givenList):
     # helper function to reduce val of given list
-    sum = reduce(lambda x, y: x*y, arr)
-    arrayList = []
-    # divide product of given array by each element in our list
-    for i in arr:
+    product = reduce(lambda x, y: x*y, givenList)
+    ans = []
+    # divide product of given list by each element in our list
+    for i in givenList:
         # remove decimal from division via int()
-        arrayList.append(int(sum/i))
-    return arrayList
+        ans.append(int(product/i))
+    return ans
 
 # Without division ################################################
 
-def arrayProduct2(arr):
+from functools import reduce
+
+ans = []
+
+def listProduct2(givenList):
+    for x in givenList:
+        # generate a copy list we can manipulate
+        copyList = givenList.copy()
+        # remove the value before we multiply
+        copyList.remove(x)
+        product = reduce(lambda x, y: x*y, copyList)
+        ans.append(product)
+    return ans

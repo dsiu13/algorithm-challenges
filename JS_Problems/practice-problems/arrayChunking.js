@@ -40,7 +40,6 @@ function chunk(array , size){
 // push a slice of lenth 'size' from 'array' into 'chunked'
 // add 'size' to 'index'
 
-
 function chunk(array , size){
   const chunked = [];
   let index = 0;
