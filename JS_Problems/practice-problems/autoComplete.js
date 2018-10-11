@@ -19,9 +19,6 @@ function autocomplete(arr, query){
 
 autocomplete(['dog', 'deer', 'deal', 'dead','dance','need','bed'], 'de')
 
-
-// Use BST to match query via transverse, so we don't waste effort on things that don't match?
-
 // class node
 // hashmap <char, node> children
 // boolean complete word
