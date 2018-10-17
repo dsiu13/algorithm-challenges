@@ -18,7 +18,7 @@ function twoSum(arr, S) {
     for (var j = i + 1; j < arr.length; j++) {
       // determine if these two elements sum to S
       if (arr[i] + arr[j] === S) {
-        sums.push([arr[i], arr[j]]);
+        sums.push([i,j]);
       }
     }
   }
