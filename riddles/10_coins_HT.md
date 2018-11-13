@@ -11,12 +11,13 @@
 
 
 | Pile One (Unflipped) | Pile Two (Unflipped) | Pile One (Flipped) |
-| :------: | :-----: | :-----: | :-----: |
+| :------: | :-----: | :-----: |
 | H T T T T | T H H H H | T H H H H |
 | H H T T T| T T H H H | T T H H H |
 
+
 | Pile Two (Unflipped) | Pile One (Unflipped) | Pile Two (Flipped) |
-| :------: | :-----: | :-----: | :-----: |
+| :------: | :-----: | :-----: |
 | T H H H H | H T T T T | H T T T T |
 | T T H H H| H H T T T | H H T T T |
 
