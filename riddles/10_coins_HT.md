@@ -10,10 +10,16 @@
 - You will now have a matching number of heads in each pile.
 
 
-| Pile One (Unfliped) | Pile Two (Unfliped) | Pile One (Flipped) | Pile Two (Flipped) |
+| Pile One (Unflipped) | Pile Two (Unflipped) | Pile One (Flipped) |
 | :------: | :-----: | :-----: | :-----: |
-| H T T T T | T H H H H | T H H H H | H T T T T |
-| H H T T T| T T H H H | T T H H H | H H T T T |
+| H T T T T | T H H H H | T H H H H |
+| H H T T T| T T H H H | T T H H H |
+
+| Pile Two (Unflipped) | Pile One (Unflipped) | Pile Two (Flipped) |
+| :------: | :-----: | :-----: | :-----: |
+| T H H H H | H T T T T | H T T T T |
+| T T H H H| H H T T T | H H T T T |
 
 - If you flip the coins in Pile One **( T H H H H )**, it will match the unflipped coins in Pile Two **( T H H H H )**.
 - The same occurs if you flip Pile Two **( H T T T T )**, it will match the unflipped coins in Pile One **( H T T T T )**.
+- Second Example: Flipped Pile One **( T T H H H )**, Unflipped Pile Two **( T T H H H )**
