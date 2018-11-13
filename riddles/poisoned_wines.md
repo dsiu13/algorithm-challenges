@@ -29,6 +29,8 @@
 
 ## Binary Solution
 - Assign each bottle a value based on its binary value.
+- We feed each rat a drop of wine based on the corresponding binary value of the value. If a one would appear over a rat, that rat drinks a drop of wine.
+- Based on the position of poisoned rats, we can read a binary value and determine the bottle.
 
 | Binary Position | Slot Value |
 | :------: | :-----: |
