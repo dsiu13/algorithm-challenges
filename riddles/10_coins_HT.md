@@ -9,12 +9,14 @@
 - Flip all the coins one of the piles once.
 - You will now have a matching number of heads in each pile.
 
+## Pile One Flipped
 
 | Pile One (Unflipped) | Pile Two (Unflipped) | Pile One (Flipped) |
 | :------: | :-----: | :-----: |
 | H T T T T | T H H H H | T H H H H |
 | H H T T T| T T H H H | T T H H H |
 
+## Pile Two Flipped
 
 | Pile Two (Unflipped) | Pile One (Unflipped) | Pile Two (Flipped) |
 | :------: | :-----: | :-----: |
