@@ -9,7 +9,12 @@
 // Output: True
 // Explanation: 28 = 1 + 2 + 4 + 7 + 14
 
+// 6 => 1 + 2 + 3 = 6
+// 28 => 1 + 2 + 4 + 7 + 14
+
+// Perfect Nums
+// 2, 6, 28, 496, 8128
 
 perfectNum = (n) => {
-  
+
 };

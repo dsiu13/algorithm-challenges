@@ -7,10 +7,11 @@
 
 - What is the least amount of time in which all the travelers can cross from one side of the bridge to the other?
 
-a = 1 min
-b = 2 min
-c = 5 min
-d = 10 min
+#### Crossing Times
+- a = 1 min
+- b = 2 min
+- c = 5 min
+- d = 10 min
 
 ### Includes return time to other side
 
