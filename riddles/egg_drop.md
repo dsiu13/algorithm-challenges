@@ -5,8 +5,10 @@
 
 - Show algorithmically how you would go about doing this in as few drops as possible. (Your answer should be a number of the fewest drops needed for testing 2 eggs on 100 floors)
 
+## Math
 - m = # of floors
-
 - n(n+1)/2 = m
+
+## Solve for N
 - n(n+1)/2 = 100
 - Solve for N = 13.651
