@@ -12,17 +12,14 @@ There are 25 horses among which you need to find out the fastest 3 horses. You c
 | 5  | E5 E4 E3 E2 E1 |
 
 
-### Seven Races
+### The answer is Seven Races
 
-- Split 25 into five groups of five race them. Label each group A-E. @ 5 Races
+- Split 25 into five groups of five race them. Label each group A-E. We're at **Five** Races.
 - Arrange each group by speed. a1(the fastest) to a5(the slowest). Repeat for each group.
 - Arrange groupings by having the fastest horse group on top. Then race the
-fastest horse in each group. The winner is the fastest overall horse(1st place) @ 6 Races
-- To find the 2nd and 3rd in one race we need to remove horses that have no chance of winning. These horses at best
-can be two places away.
-- Last race, we can eliminate any horse from two slowest groups since the fastest horse in each
-group was slowing than the fastest horse in other groups. Also remove the four other horses
-from the 3rd fastest group for the same reason.
+fastest horse in each group. The winner is the fastest overall horse(1st place) At a total of **Six** Races
+- To find the 2nd and 3rd in one race we need to remove horses that have no chance of winning. These horses at best can be **two places away**.
+- Last race (Seventh Race), we can eliminate any horse from two slowest groups since the fastest horse in each group was slower than the fastest horse in other groups. Also remove the four other horses from the 3rd fastest group for the same reason.
 - We can also remove the three slowest horses from the 2nd fastest group
 since they aren't faster than 1st/2nd fastest in that group.
 - We can also remove the three slowest from the first fastest group.
