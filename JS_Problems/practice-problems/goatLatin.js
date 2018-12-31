@@ -29,20 +29,32 @@
 // Regex vowel check
 // ^[aieouAIEOU].*
 
-function vowels(str){
-  var vowelRegex = '^[aieouAIEOU].*'
-  var matched = str.match(vowelRegex)
-  if(matched){
-    console.log("True")
-  } else {
-    console.log("False")
-  }
+// function vowels(str){
+//   var vowelRegex = '^[aieouAIEOU].*'
+//   var matched = str.match(vowelRegex)
+//   if(matched){
+//     console.log("True")
+//   } else {
+//     console.log("False")
+//   }
+// }
+
+vowelCheck = word => {
+  let vowelRegex = '^[aieouAIEOU].*'
+  let matched = word.match(vowelRegex);
 }
 
 goatLatin = str => {
   let ans = []
-  lets words = str.split(" ")
+  let vowelRegex = '^[aieouAIEOU].*'
+  let words = str.split(" ")
   words.map(x => {
-    if()
-  })
-}
+    let matched = x.match(vowelRegex);
+    if(matched){
+      ans.push(x + "ma")
+    } else {
+      console.log("false")
+    }
+    console.log(ans)
+  });
+};
