@@ -21,11 +21,28 @@
 // Input: "The quick brown fox jumped over the lazy dog"
 // Output: "heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa"
 
-let vowels = ['a','e','i','o','u']
+
+// Check first char to see if its a vowel
+// if vowel append ma to end, if constant move first char at end then add ma.
+// Add A's depending on index position.
+
+// Regex vowel check
+// ^[aieouAIEOU].*
+
+function vowels(str){
+  var vowelRegex = '^[aieouAIEOU].*'
+  var matched = str.match(vowelRegex)
+  if(matched){
+    console.log("True")
+  } else {
+    console.log("False")
+  }
+}
 
 goatLatin = str => {
+  let ans = []
   lets words = str.split(" ")
   words.map(x => {
-
+    if()
   })
 }
