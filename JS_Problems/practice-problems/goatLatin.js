@@ -39,28 +39,24 @@
 //   }
 // }
 
-vowelCheck = word => {
-  let vowelRegex = '^[aieouAIEOU].*'
-  let matched = word.match(vowelRegex);
-}
-
 goatLatin = str => {
   let ans = []
   let vowelRegex = '^[aieouAIEOU].*'
   let words = str.split(" ")
+  let i = 1;
 
   words.map(x => {
-    let aCount = "a"
+    let latinize = "ma";
     let matched = x.match(vowelRegex);
     if(matched){
-      ans.push(x + "ma" + aCount)
-      aCount + "a"
+      ans.push(x + latinize + "a".repeat(i))
+      i++
     } else {
-      ans.push(x.substr(1) + x.substr(0, 1) + "ma" + aCount)
-      aCount + "a"
+      ans.push(x.substr(1) + x.substr(0, 1) + latinize + "a".repeat(i))
+      i++
     }
-    console.log(ans)
+    return ans.join(" ")
   });
 };
 
-goatLatin("I am the machine")
+goatLatin("I speak Goat Latin")
