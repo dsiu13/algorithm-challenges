@@ -46,13 +46,13 @@ goatLatin = str => {
   let i = 1;
 
   words.map(x => {
-    let latinize = "ma";
+    let latinize = "ma" + "a".repeat(i);
     let matched = x.match(vowelRegex);
     if(matched){
-      ans.push(x + latinize + "a".repeat(i))
+      ans.push(x + latinize);
       i++
     } else {
-      ans.push(x.substr(1) + x.substr(0, 1) + latinize + "a".repeat(i))
+      ans.push(x.substr(1) + x.substr(0, 1) + latinize);
       i++
     }
     return ans.join(" ")
