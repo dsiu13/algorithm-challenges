@@ -48,13 +48,19 @@ goatLatin = str => {
   let ans = []
   let vowelRegex = '^[aieouAIEOU].*'
   let words = str.split(" ")
+
   words.map(x => {
+    let aCount = "a"
     let matched = x.match(vowelRegex);
     if(matched){
-      ans.push(x + "ma")
+      ans.push(x + "ma" + aCount)
+      aCount + "a"
     } else {
-      console.log("false")
+      ans.push(x.substr(1) + x.substr(0, 1) + "ma" + aCount)
+      aCount + "a"
     }
     console.log(ans)
   });
 };
+
+goatLatin("I am the machine")
