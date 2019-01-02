@@ -20,3 +20,5 @@ function spinWords(str){
 spinWords("This is a Test")
 spinWords("This is Another Test")
 // spinWords( "This is another test" )=> returns "This is rehtona test"
+
+// Reverse string in place.

@@ -22,5 +22,5 @@ var selfDividingNumbers = function(left, right) {
             result.push(i);
             }
         }
-        return result;
+    return result;
 };
