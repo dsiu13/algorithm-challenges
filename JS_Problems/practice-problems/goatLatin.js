@@ -39,6 +39,7 @@
 //   }
 // }
 
+// 1st Attempt
 goatLatin = str => {
   let ans = []
   let vowelRegex = '^[aieouAIEOU].*'
@@ -55,8 +56,8 @@ goatLatin = str => {
       ans.push(x.substr(1) + x.substr(0, 1) + latinize);
       i++
     }
-    return ans.join(" ")
   });
+    return ans.join(" ")
 };
 
 goatLatin("I speak Goat Latin")
