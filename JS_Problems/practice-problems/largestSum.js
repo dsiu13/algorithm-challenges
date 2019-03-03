@@ -26,16 +26,13 @@ largestNum = (arr) => {
 
 largestNum([1,2,3,4,5])
 
+// 2nd Attempt
 
 largestNum2 = arr => {
   let arr1 = [];
-  let sum1 = 0;
-  let sum2 = 0;
+  let arr2 = [];
+  let evenRegex = /^\d*[02468]$/
 
-  function sumArr(arr) {
-    const reducer = (accumulator, currentValue) => accumulator + currentValue;
-    for (i = 0; i < arr.length; i += 2) {
-      arr1.push(arr[i])
-    };
-    console.log(arr1.reduce(reducer))
-  }
+}
+
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
