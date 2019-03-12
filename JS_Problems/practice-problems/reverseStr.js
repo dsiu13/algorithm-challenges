@@ -22,3 +22,27 @@ spinWords("This is Another Test")
 // spinWords( "This is another test" )=> returns "This is rehtona test"
 
 // Reverse string in place.
+spinWords = str => {
+
+}
+
+// Recursion w/ ternary
+function reverseString(str) {
+  return (str === '') ? '' : reverseString(str.substr(1)) + str.charAt(0);
+}
+reverseString("hello");
+
+// Recursion
+// remember that you won’t have just one call, but several nested calls
+// The method hits the IF condition and the most highly nested call returns immediately
+
+function reverseString(str) {
+  if (str === "")
+    return "";
+  else
+    return reverseString(str.substr(1)) + str.charAt(0);
+}
+reverseString("hello");
+
+// The depth of the recursion is equal to the length of the String.
+// This solution is not the best one and will be really slow if the String is very long and the stack size is of major concern.

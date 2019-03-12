@@ -1,6 +1,7 @@
 // Say you have an array for which the ith element is the price of a given stock on day i.
 //
-// Design an algorithm to find the maximum profit. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times).
+// Design an algorithm to find the maximum profit. You may complete as many transactions as you like (i.e.,
+// buy one and sell one share of the stock multiple times).
 //
 // Note: You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).
 //
@@ -23,8 +24,10 @@
 // Output: 0
 // Explanation: In this case, no transaction is done, i.e. max profit = 0.
 
-let market = [7,1,5,3,6,4];
 
+// Single Buy & Sell Order
+
+let market = [7,1,5,3,6,4];
 
 let low = 4;
 let day = 0;
@@ -49,3 +52,5 @@ stocks = arr => {
 }
 
 stocks(market)
+
+// Multiple Buy & Sell orders if theres more than one good low
