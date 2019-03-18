@@ -49,7 +49,7 @@ goatLatin = str => {
   words.map(x => {
     let latinize = "ma" + "a".repeat(i);
     let matched = x.match(vowelRegex);
-    if(matched){
+    if(matched) {
       ans.push(x + latinize);
       i++
     } else {

@@ -27,7 +27,7 @@
 
 // Single Buy & Sell Order
 
-let market = [7,1,5,3,6,4];
+let market = [7, 1, 5, 3, 6, 4];
 
 let low = 4;
 let day = 0;
@@ -35,22 +35,22 @@ let profit = 0;
 
 stocks = arr => {
   arr.map(x => {
-    if ( x <= low ){
-      low = x
-      day = arr.indexOf(x)
+    if (x <= low) {
+      low = x;
+      day = arr.indexOf(x);
     }
   });
 
   let buyDate = market.slice(day + 1, market.length + 1);
 
   buyDate.map(y => {
-    if(y - low >= profit) {
+    if (y - low >= profit) {
       profit = y - low;
     }
-  })
+  });
   return profit;
-}
+};
 
-stocks(market)
+stocks(market);
 
 // Multiple Buy & Sell orders if theres more than one good low
