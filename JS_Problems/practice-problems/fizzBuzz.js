@@ -26,3 +26,7 @@ function fizzBuzz(n) {
     }
   }
 }
+
+fizzBuzzSwitch = n => {
+
+}
