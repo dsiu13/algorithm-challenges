@@ -12,9 +12,19 @@
 let i = [1,1]
 let j = [2,2]
 
-// sum array, grab diff
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+let candyA = 0;
+let candyB = 0;
+let candyGoal = 0;
 
 candy = (i, j) => {
 
+candyA = i.reduce(reducer);
+candyB = j.reduce(reducer);
+
+candyGoal = (candyA + candyB) / 2
+
+console.log(candyGoal)
 }
-gi
+
+candy(i, j)
