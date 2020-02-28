@@ -14,6 +14,7 @@
 // 1st Attempt
 // Runtime: 56 ms
 // Memory Usage: 33.8 MB
+// Calculate BigO Notation
 
 let ipDefrag = address => {
   let defraggedIp = []
@@ -26,4 +27,18 @@ let ipDefrag = address => {
     };
   })
     return defraggedIp.join("");
+};
+
+// no split
+var defangIPaddr = function(address) {
+    let result = "";
+    for(let i = 0; i<address.length; i++){
+        if(address[i] == '.'){
+            result += "[.]";
+        }
+        else{
+            result += address[i];
+        }
+    }
+    return result;
 };
