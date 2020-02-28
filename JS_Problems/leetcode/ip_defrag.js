@@ -1,3 +1,4 @@
+// 1108 Defanging an IP address
 // Given a valid (IPv4) IP address, return a defanged version of that IP address.
 //
 // A defanged IP address replaces every period "." with "[.]".
@@ -16,29 +17,23 @@
 // Memory Usage: 33.8 MB
 // Calculate BigO Notation
 
-let ipDefrag = address => {
-  let defraggedIp = []
-  let defragging = address.split("");
-  defragging.map(x => {
+let ipDefang = address => {
+  let defangedIp = []
+  let defanging = address.split("");
+  defanging.map(x => {
     if (x == ".") {
       defraggedIp.push("[.]");
     } else {
-      defraggedIp.push(x);
+      defangedIp.push(x);
     };
   })
-    return defraggedIp.join("");
+    return defangedIp.join("");
 };
 
-// no split
-var defangIPaddr = function(address) {
-    let result = "";
-    for(let i = 0; i<address.length; i++){
-        if(address[i] == '.'){
-            result += "[.]";
-        }
-        else{
-            result += address[i];
-        }
-    }
-    return result;
-};
+//Runtime 84ms
+let ipDefang = address => {
+  let defanged = "";
+  for(i = 0; i < address.length; i++) {
+    address[i] == "." ? defanged += "[.]" : defanged += address[i]
+  }
+}
