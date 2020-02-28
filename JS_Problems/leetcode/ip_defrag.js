@@ -11,15 +11,19 @@
 // Input: address = "255.100.50.0"
 // Output: "255[.]100[.]50[.]0"
 
-let ipDefrag = ip => {
+// 1st Attempt
+// Runtime: 56 ms
+// Memory Usage: 33.8 MB
+
+let ipDefrag = address => {
   let defraggedIp = []
-  let defragging = ip.split("")
+  let defragging = address.split("");
   defragging.map(x => {
     if (x == ".") {
-      defraggedIp.push("[.]")
+      defraggedIp.push("[.]");
     } else {
-      defraggedIp.push(x)
+      defraggedIp.push(x);
     };
   })
-    return defraggedIp.join("")
+    return defraggedIp.join("");
 };
