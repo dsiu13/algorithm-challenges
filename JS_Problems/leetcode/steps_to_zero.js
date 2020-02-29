@@ -27,16 +27,19 @@
 // Input: num = 123
 // Output: 12
 
+// 1st Attempt
+// Runtime: 52ms
+// Memory: 33.8mb
 let zero = (num) => {
   let steps = 0;
   let res = num;
 
   while ( res > 0) {
     if(res % 2 == 0) {
-      steps += 1
+      steps++
       res = res / 2
     } else {
-      steps += 1
+      steps++
       res = res - 1
     };
   };
