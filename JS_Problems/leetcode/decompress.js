@@ -25,17 +25,39 @@
 // Array of arrs. iterate through
 
 let decompress = arr => {
-  let res = [];
+  let arrPairs = [];
+  for (let i = 0; i < arr.length; i+= 2){
+      let sliceIt = arr.slice(i, i + 2);
+        arrPairs.push(sliceIt);
+  };
 
+};
+
+let decompress = arr => {
+  let arrPairs = [];
+  let decompressedArr = [];
+  
+  for (let i = 0; i < arr.length; i+= 2) {
+      let sliceIt = arr.slice(i, i + 2);
+        arrPairs.push(sliceIt);
+  };
+
+  for (let i = 0; i < arrPairs.length; i+= 2) {
+    let count = 0;
+    while(count <= arrPairs[i + 1]) {
+      decompressedArr.push(arrPairs[i])
+      count += 1;
+    };
+  };
 
 };
 
 // function to return arr size of 2
-let separateIt = (arr, size) => {
-    var newArr = [];
-    for (var i = 0; i < arr.length; i += size) {
-        var sliceIt = arr.slice(i, i + size);
-        newArr.push(sliceIt);
-    }
-    return newArr;
-};
+// let separateIt = (arr, size) => {
+//     var newArr = [];
+//     for (var i = 0; i < arr.length; i += size) {
+//         var sliceIt = arr.slice(i, i + size);
+//         newArr.push(sliceIt);
+//     }
+//     return newArr;
+// };
