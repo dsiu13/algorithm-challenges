@@ -24,33 +24,60 @@
 // Slice into tuples?
 // Array of arrs. iterate through
 
-let decompress = arr => {
-  let arrPairs = [];
-  for (let i = 0; i < arr.length; i+= 2){
-      let sliceIt = arr.slice(i, i + 2);
-        arrPairs.push(sliceIt);
-  };
+// let decompress = arr => {
+//   let arrPairs = [];
+//   for (let i = 0; i < arr.length; i+= 2){
+//       let sliceIt = arr.slice(i, i + 2);
+//         arrPairs.push(sliceIt);
+//   };
+//
+// };
 
+// make a map assign entry value as key, # of entries as value?
+var decompressRLElist = function(nums) {
+    const numsMap = New Map)()
+    for(i = 0; i < nums.length; i + 2) {
+        let freq = nums[i]
+        let val = nums[i + 1]
+        numsMap.set(val, freq)
+    }
 };
 
-let decompress = arr => {
-  let arrPairs = [];
-  let decompressedArr = [];
-  
-  for (let i = 0; i < arr.length; i+= 2) {
-      let sliceIt = arr.slice(i, i + 2);
-        arrPairs.push(sliceIt);
-  };
+decompress([1,2,3,4])
 
-  for (let i = 0; i < arrPairs.length; i+= 2) {
-    let count = 0;
-    while(count <= arrPairs[i + 1]) {
-      decompressedArr.push(arrPairs[i])
-      count += 1;
-    };
+var twoSum = (nums, target) => {
+  const map = new Map()
+  for(let i = 0; i < nums.length; i++){
+    let val = nums[i];
+    if(map.has(c=val)){
+      return [map.get(val), i];
+    }
+    let diff = target - val
+    map.set(diff, i);
   };
-
 };
+
+// NOPE
+// let decompress = arr => {
+//   let arrPairs = [];
+//   let decompressedArr = [];
+//
+//   for (let i = 0; i < arr.length; i+= 2) {
+//       let sliceIt = arr.slice(i, i + 2);
+//         arrPairs.push(sliceIt);
+//   };
+//
+//   for (let i = 0; i < arrPairs.length; i++) {
+//     let count = 0;
+//     while(count <= arrPairs[i][i]) {
+//       decompressedArr.push(arrPairs[i][i + 2])
+//       count += 1;
+//     };
+//   };
+//
+//   console.log(decompressedArr)
+//
+// };
 
 // function to return arr size of 2
 // let separateIt = (arr, size) => {
