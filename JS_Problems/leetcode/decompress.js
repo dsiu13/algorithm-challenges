@@ -33,29 +33,34 @@
 //
 // };
 
-// make a map assign entry value as key, # of entries as value?
+// make a map assign entry value as key, # of entries as value? NOPE
+// var decompressRLElist = function(nums) {
+//     let decompressList = [];
+//     const numsMap = New Map)()
+//     for(i = 0; i < nums.length; i + 2) {
+//         let freq = nums[i];
+//         let val = nums[i + 1];
+//         numsMap.set(val, freq);
+//     };
+// };
+
 var decompressRLElist = function(nums) {
-    const numsMap = New Map)()
-    for(i = 0; i < nums.length; i + 2) {
-        let freq = nums[i]
-        let val = nums[i + 1]
-        numsMap.set(val, freq)
+    let count = 0
+    let decompressed = [];
+    for(i = 0; i < nums.length; i += 2) {
+        let freq = nums[i];
+        let val = nums[i + 1];
+
+
+        while(count < freq){
+          decompressed.push(val)
+          count++
+        };
     }
+  console.log(decompressed)
 };
 
-decompress([1,2,3,4])
-
-var twoSum = (nums, target) => {
-  const map = new Map()
-  for(let i = 0; i < nums.length; i++){
-    let val = nums[i];
-    if(map.has(c=val)){
-      return [map.get(val), i];
-    }
-    let diff = target - val
-    map.set(diff, i);
-  };
-};
+decompressRLElist([1,2,3,4])
 
 // NOPE
 // let decompress = arr => {
