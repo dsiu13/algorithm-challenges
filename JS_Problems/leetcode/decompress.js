@@ -44,6 +44,8 @@
 //     };
 // };
 
+//84 ms
+// 37.2 mb
 var decompressRLElist = function(nums) {
 
     let decompressed = [];
@@ -55,8 +57,8 @@ var decompressRLElist = function(nums) {
           decompressed.push(val)
           freq--
         }
-    };    
-  console.log(decompressed);
+    };
+  return decompressed;
 };
 
 decompressRLElist([1,2,3,4]);
