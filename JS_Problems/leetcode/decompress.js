@@ -45,22 +45,21 @@
 // };
 
 var decompressRLElist = function(nums) {
-    let count = 0
+
     let decompressed = [];
     for(i = 0; i < nums.length; i += 2) {
         let freq = nums[i];
         let val = nums[i + 1];
 
-
-        while(count < freq){
+        while(freq > 0){
           decompressed.push(val)
-          count++
-        };
-    }
-  console.log(decompressed)
+          freq--
+        }
+    };    
+  console.log(decompressed);
 };
 
-decompressRLElist([1,2,3,4])
+decompressRLElist([1,2,3,4]);
 
 // NOPE
 // let decompress = arr => {
