@@ -29,3 +29,7 @@
 //
 // 2 <= nums.length <= 500
 // 0 <= nums[i] <= 100
+
+var smallerNumbersThanCurrent = function(nums) {
+  
+};
