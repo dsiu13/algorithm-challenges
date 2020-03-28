@@ -23,11 +23,15 @@
 // 0 <= A[i] < 10000
 // A.length is even
 
+// console.log(`${property}: ${freq[property]}`);
+// console.log(`${property}`)
 
 // key = number and value = freq of the number
+// failed - [8,3,2,3]
 
 var repeatedNTimes = function(A) {
   let ans = 0;
+  let count = 0;
   let freq = { };
 
   for (let i = 0, j = A.length; i < j; i++) {
@@ -40,15 +44,13 @@ var repeatedNTimes = function(A) {
   }
 
   for (const property in freq) {
-    // console.log(`${property}: ${freq[property]}`);
-    // console.log(`${property}`)
-    if (`${freq[property]}` > ans) {
-      ans = `${property}`;
-    };
+
+      if(`${freq[property]}` > count) {
+        count = `${freq[property]}`;
+        ans = `${property}`;
+      };
   };
-
-  return ans
-
+    console.log(ans)
 };
 
-repeatedNTimes([5,1,5,2,5,3,5,4])
+repeatedNTimes([8,3,2,3])
