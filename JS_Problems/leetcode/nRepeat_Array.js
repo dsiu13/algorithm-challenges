@@ -27,18 +27,27 @@
 // key = number and value = freq of the number
 
 var repeatedNTimes = function(A) {
+  let ans = 0;
+  let freq = { };
 
-  var obj = { };
-  for (var i = 0, j = A.length; i < j; i++) {
-     if (obj[A[i]]) {
-        obj[A[i]]++;
+  for (let i = 0, j = A.length; i < j; i++) {
+     if (freq[A[i]]) {
+        freq[A[i]]++;
      }
      else {
-        obj[A[i]] = 1;
+        freq[A[i]] = 1;
      }
   }
 
-  console.log(obj);
+  for (const property in freq) {
+    // console.log(`${property}: ${freq[property]}`);
+    // console.log(`${property}`)
+    if (`${freq[property]}` > ans) {
+      ans = `${property}`;
+    };
+  };
+
+  return ans
 
 };
 
