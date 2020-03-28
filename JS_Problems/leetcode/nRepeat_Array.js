@@ -26,9 +26,10 @@
 // console.log(`${property}: ${freq[property]}`);
 // console.log(`${property}`)
 
-// key = number and value = freq of the number
-// failed - [8,3,2,3]
+// Runtime: 80 ms, faster than 39.79% of JavaScript online submissions for N-Repeated Element in Size 2N Array.
+// Memory Usage: 40.5 MB, less than 6.25% of JavaScript online submissions for N-Repeated Element in Size 2N Array
 
+// O(n)?
 var repeatedNTimes = function(A) {
   let ans = 0;
   let count = 0;
@@ -50,7 +51,7 @@ var repeatedNTimes = function(A) {
         ans = `${property}`;
       };
   };
-    console.log(ans)
+    return ans
 };
 
 repeatedNTimes([8,3,2,3])
