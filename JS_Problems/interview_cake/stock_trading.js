@@ -13,10 +13,20 @@
 // getMaxProfit(stockPrices);
 // Returns 6 (buying for $5 and selling for $11)
 
-let stockPrices = [10, 7, 5, 8, 11, 9]
-
 let moneyMaking = arr => {
-  
+
+  let stockPrices = arr;
+  let lowestPrice = arr.sort(function(a, b){return a-b});
+  let buyIn = [];
+  let buyTime = 0;
+
+  arr.map(x => {
+    if (x == lowestPrice[0]){
+      let buyTime = arr.indexOf(x);
+      console.log(buyTime)
+    };
+  });
+
 };
 
-moneyMaking(stockPrices)
+moneyMaking([10, 7, 5, 8, 11, 9])
