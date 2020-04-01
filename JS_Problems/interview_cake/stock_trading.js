@@ -18,12 +18,17 @@ let moneyMaking = arr => {
   let stockPrices = arr;
   let lowestPrice = arr.sort(function(a, b){return a-b});
   let buyIn = [];
-  let buyTime = 0;
 
-  arr.map(x => {
-    if (x == lowestPrice[0]){
-      let buyTime = arr.indexOf(x);
-      console.log(buyTime)
+// for(let i = 0; i < stockPrices.length - 1; i++) {
+//   if(stockPrices[i] == lowestPrice[0]) {
+//       console.log(stockPrices.indexOf(lowestPrice[0]));
+//   };
+// };
+
+  stockPrices.map(x => {
+    if (x == lowestPrice[0]) {
+      let buyIn = x.toString();
+      console.log(stockPrices.indexOf(x.toString()))
     };
   });
 
