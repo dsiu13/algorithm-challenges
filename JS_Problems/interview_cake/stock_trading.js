@@ -14,24 +14,9 @@
 // Returns 6 (buying for $5 and selling for $11)
 
 let moneyMaking = arr => {
-
-  let stockPrices = arr;
-  let lowestPrice = arr.sort(function(a, b){return a-b});
-  let buyIn = [];
-
-// for(let i = 0; i < stockPrices.length - 1; i++) {
-//   if(stockPrices[i] == lowestPrice[0]) {
-//       console.log(stockPrices.indexOf(lowestPrice[0]));
-//   };
-// };
-
-  stockPrices.map(x => {
-    if (x == lowestPrice[0]) {
-      let buyIn = x.toString();
-      console.log(stockPrices.indexOf(x.toString()))
-    };
-  });
-
+    let lowestBuy = arr.slice(0).sort(function(a, b){return a-b});
+    let cash = lowestBuy.slice(-1)[0] - lowestBuy[0]
+    console.log(cash)
 };
 
 moneyMaking([10, 7, 5, 8, 11, 9])
