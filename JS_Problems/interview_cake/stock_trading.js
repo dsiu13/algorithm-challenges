@@ -19,4 +19,5 @@ let moneyMaking = arr => {
     console.log(cash)
 };
 
-moneyMaking([10, 7, 5, 8, 11, 9])
+// moneyMaking([10, 7, 5, 8, 11, 9]);
+moneyMaking([10, 1, 7, 15]);
