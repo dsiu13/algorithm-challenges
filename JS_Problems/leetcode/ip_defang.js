@@ -18,16 +18,16 @@
 // Calculate BigO Notation
 
 let ipDefang = address => {
-  let defangedIp = []
+  let defangedIP = []
   let defanging = address.split("");
   defanging.map(x => {
     if (x == ".") {
-      defraggedIp.push("[.]");
+      defangedIP.push("[.]");
     } else {
-      defangedIp.push(x);
+      defangedIP.push(x);
     };
   })
-    return defangedIp.join("");
+    return defangedIP.join("");
 };
 
 //Runtime 84ms
