@@ -17,7 +17,7 @@
 // Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 // Follow up:
 //
-// Coud you solve it without converting the integer to a string?
+// Coud you solve it without converting the integer to a string? No :(
 
 // Runtime: 196 ms
 // Mem: 45.6 mb

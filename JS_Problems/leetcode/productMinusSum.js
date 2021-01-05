@@ -25,20 +25,7 @@ var subtractProductAndSum = function(n) {
   let numSum = n.reduce((a, b) => a + b, 0)
   let productAns = 1;
     n.map(x => {productAns *= x});
-    
+
   let ans = productAns - numSum
   return ans
 };
-
-///////
-var subtractProductAndSum = function(n) {
-  let numSum = n.reduce((a, b) => a + b, 0)
-  let productAns = 1;
-  let numMulti = n.map(x => {
-    productAns *= x
-  });
-  let ans = productAns - numSum
-  return ans
-};
-
-subtractProductAndSum([3,2,3])

@@ -44,12 +44,12 @@
 //     };
 // };
 
-//84 ms
-// 37.2 mb
+// Run Time: 84 ms
+// Mem Usage: 37.2 mb
 var decompressRLElist = function(nums) {
 
     let decompressed = [];
-    for(i = 0; i < nums.length; i += 2) {
+    for (i = 0; i < nums.length; i += 2) {
         let freq = nums[i];
         let val = nums[i + 1];
 
