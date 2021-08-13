@@ -15,8 +15,8 @@
 
 let moneyMaking = arr => {
     let lowestBuy = arr.slice(0).sort(function(a, b){return a-b});
-    let cash = lowestBuy.slice(-1)[0] - lowestBuy[0]
-    console.log(cash)
+    let cash = lowestBuy.slice(-1)[0] - lowestBuy[0];
+    return cash;
 };
 
 // moneyMaking([10, 7, 5, 8, 11, 9]);
