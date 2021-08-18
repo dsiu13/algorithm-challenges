@@ -4,30 +4,25 @@
 //
 // rand5() returns each integer with equal probability. rand7() must also return each integer with equal probability.
 
-
-// function rand5() {
-//   return Math.floor(Math.random() * (5 - 1 + 1)) + 1;
-// }
-//
-// function rand7() {
-//
-//   // Implement rand7() using rand5()
-//
-//
-//   return 0;
-// }
-//
-//
-// for (let i = 0; i < 14; i++) {
-//   console.log(rand7());
-// }
-
-
-function rand7()
+function rand7Table()
 {
-  const roll1 = rand5();
-  const roll2 = rand5();
+  const results = [
+    [1, 2, 3, 4, 5],
+    [6, 7, 1, 2, 3],
+    [4, 5, 6, 7, 1],
+    [2, 3, 4, 5, 6],
+    [7, 0, 0, 0, 0],
+  ];
 
-  const outcomeNumber = (roll1 - 1) * 5 + (roll2 - 1) + 1;
+  while (true)
+  {
+    const row = rand5() - 1;
+    const column = rand5() - 1;
 
+    if (row === 4 && column > 0)
+    {
+      continue;
+    }
+    return results[row][column];
+  }
 }
