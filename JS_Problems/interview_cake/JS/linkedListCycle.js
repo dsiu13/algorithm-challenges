@@ -15,7 +15,7 @@ class LinkedList
 
 		insertFirst(data)
 		{
-			this.head = new Node(data,this.head);
+			this.head = new Node(data, this.head);
 			this.size++;
 		};
 
@@ -30,38 +30,20 @@ class LinkedList
 
 				insertLast(data)
 				{
-					let node = new Node(data)
+					let node = new Node(data);
 					let current;
 
-					if(!this.head) {
+					if(!this.head){
 						this.head = node;
 					} else {
-						current = this.head;
-							while (current.next) {
+							current = this.head;
+							while(current.next) {
 								current = current.next;
-							}
-							current.next = node;
-					};
-							this.size++
-
-				};
-
-
-	insertLast(data)
-	{
-		let node = new Node(data);
-		let current;
-
-		if(!this.head){
-			this.head = node;
-		} else {
-				current = this.head;
-				while(current.next) {
-					current = current.next;
-			  }
-				this.size++;
-			};
-	 };
+						  }
+								current.next = node;
+						};
+						this.size++
+				 };
 
 };
 
