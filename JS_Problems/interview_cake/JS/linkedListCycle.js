@@ -1,11 +1,10 @@
-// You have a singly-linked list ↴ and want to check if it contains a cycle.
-
+// mine
 class Node {
-  contructor(data, next = null) {
-    this.data = data;
-    this.next = next;
-  }
+	constructor(data, next = null) {
+		this.data = data;
+		this.next = next;
+	}
 };
 
-const n1 = new Node(123, 0);
-console.log(n1);
+const n1 = new Node(123)
+console.log(n1)
