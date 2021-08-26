@@ -1,9 +1,18 @@
 def reverseNumber(num):
 
+    if(num < 0):
+        return False;
+
     i = list(str(num))
     j = len(i) - 1
 
-    print(i)
-    print(j)
+    for x in i:
 
-reverseNumber(12345)
+        if(x == i[j]):
+            j -= 1
+        else:
+            return False;
+
+    return True;
+
+reverseNumber(123241)
