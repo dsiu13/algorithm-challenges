@@ -11,13 +11,21 @@
 // Don't modify the input! (If there are multiple duplicates, you only need to find one of them.)
 
 
+// I think these count as modifying the input?
+function duplicateSpaceEdition(numbers) {
 
-  function duplicateSpaceEdition(numbers) {
+  return [...new Set(numbers)];
 
-    return [...new Set(numbers)];
-
-  };
+};
 
 
+function duplicateSpaceEdition(intArr) {
 
-  duplicateSpaceEdition(1,2,2,3)
+  let map = new Map();
+
+  intArr.forEach(a => map.set(a, (map.get(a) || 0) + 1));
+  let dupeArr = [...new Set(intArr.filter(a => map.get(a) > 1))];
+
+  return dupeArr;
+
+};
